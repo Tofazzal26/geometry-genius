@@ -11,6 +11,7 @@ function rhombusCalculator() {
 function commonRhombus(common) {
     const rhombus = document.getElementById(common);
     const value = rhombus.value;
+    rhombus.value = '';
     return value;
 }
 

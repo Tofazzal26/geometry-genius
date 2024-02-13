@@ -16,18 +16,18 @@
         }
     </style>
 </head>
-<body class="mx-10 inter-font">
+<body class="mx-6 inter-font">
     <header>
         <div class="my-8">
             <div class="navbar bg-[#e7f4fb] rounded-md py-4 px-8">
                 <div class="navbar-start">
                    <div>
-                    <h1 class="text-4xl font-bold cursor-pointer">Interactive</h1>
-                    <h2 class="text-2xl font-medium text-[#666c6f] cursor-pointer">Geometry Genius</h2>
+                    <h1 class=" lg:text-4xl text-2xl font-bold cursor-pointer">Interactive</h1>
+                    <h2 class=" lg:text-2xl text-sm font-medium text-[#666c6f] cursor-pointer">Geometry Genius</h2>
                    </div>
                 </div>
                 <div class="navbar-end">
-                  <a class=" px-8 py-2 rounded-md text-white cursor-pointer bg-[#1090d8]">Blog</a>
+                  <a class=" lg:px-8 lg:py-2 px-5 py-2 rounded-md text-white cursor-pointer bg-[#1090d8]">Blog</a>
                 </div>
               </div>
         </div>
@@ -37,19 +37,19 @@
     <main>
         <section>
             <div>
-                <div class="flex gap-6">
-                <!-- Geometry card here -->
-                <div class="flex-1 grid grid-cols-3 gap-6">
+                <div class="flex flex-col-reverse lg:flex-row gap-6">
+                <!-- Triangle card here -->
+                <div class="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-6">
                     <div class="card border-2 py-9 hover:bg-[#fbbced] transition ease-in-out duration-500">
-                        <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                        <figure class="lg:px-0 px-6"><img src="images/triangle.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class=" text-center text-2xl font-bold">Triangle</h2>
                           <p class="text-[#686868] text-lg font-normal">Area (A) = 0.5 X b X h</p>
                           <div class="flex items-center justify-center mb-10">
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="baseInput" placeholder="base">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="heightInput" placeholder="height">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="baseInput" placeholder="base">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 px-2">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="heightInput" placeholder="height">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 px-2">cm</span>
                           </div>
                           <div class="card-actions justify-end">
                             <button onclick="calculateTriangle()" class="bg-[#1090d8] text-white w-full text-xl font-bold py-3 rounded-md">Calculate</button>
@@ -59,15 +59,15 @@
                       <!-- Rectangle Card  here-->
 
                       <div class="card border-2 py-9 hover:bg-[#FBE7C6] transition ease-in-out duration-500">
-                        <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                        <figure class="lg:px-0 px-6"><img src="images/rectangle.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class=" text-center text-2xl font-bold">Rectangle</h2>
                           <p class="text-[#686868] text-lg font-normal">Area (A) = w X l</p>
                           <div class="flex items-center justify-center mb-10">
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="width" placeholder="width">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="length" placeholder="length">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none lg:text-lg text-base font-normal" type="text" name="" id="width" placeholder="width">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none lg:text-lg text-base font-normal" type="text" name="" id="length" placeholder="length">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
                           </div>
                           <div class="card-actions justify-end">
                             <button onclick="RectangleCalcutaion()" class="bg-[#1090d8] text-white w-full text-xl font-bold py-3 rounded-md">Calculate</button>
@@ -78,15 +78,15 @@
                       <!-- Parallelogram card here -->
 
                       <div class="card border-2 py-9 hover:bg-[#A0E7E5] transition ease-in-out duration-500">
-                        <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                        <figure class="lg:px-0 px-6"><img src="images/parallelogram.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class=" text-center text-2xl font-bold">Parallelogram</h2>
                           <p class="text-[#686868] text-lg font-normal">Area (A) = b X h</p>
                           <div class="flex items-center justify-center mb-10">
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="pBase" placeholder="base">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="pHeight" placeholder="height">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="pBase" placeholder="base">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="pHeight" placeholder="height">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
                           </div>
                           <div class="card-actions justify-end">
                             <button onclick="parallelogramCaltutale()" class="bg-[#1090d8] text-white w-full text-xl font-bold py-3 rounded-md">Calculate</button>
@@ -97,15 +97,15 @@
                       <!--  Rhombus card here -->
 
                       <div class="card border-2 py-9 hover:bg-[#69c7f0] transition ease-in-out duration-500">
-                        <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                        <figure class="lg:px-0 px-6"><img src="images/rhombus.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class=" text-center text-2xl font-bold">Rhombus</h2>
                           <p class="text-[#686868] text-lg font-normal">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
                           <div class="flex items-center justify-center mb-10">
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="d1" placeholder="d1">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="d2" placeholder="d2">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="d1" placeholder="d1">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="d2" placeholder="d2">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
                           </div>
                           <div class="card-actions justify-end">
                             <button onclick="rhombusCalculator()" class="bg-[#1090d8] text-white w-full text-xl font-bold py-3 rounded-md">Calculate</button>
@@ -116,15 +116,15 @@
                       <!-- Pentagon card here -->
 
                       <div class="card border-2 py-9 hover:bg-[#B4F8C8] transition ease-in-out duration-500">
-                        <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                        <figure class="lg:px-0 px-6"><img src="images/pentagon.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class=" text-center text-2xl font-bold">Pentagon</h2>
                           <p class="text-[#686868] text-lg font-normal">Area (A) = 0.5 X p X b</p>
                           <div class="flex items-center justify-center mb-10">
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="p" placeholder="p">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="b" placeholder="b">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="p" placeholder="p">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="b" placeholder="b">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
                           </div>
                           <div class="card-actions justify-end">
                             <button onclick="pentagonCalculate()" class="bg-[#1090d8] text-white w-full text-xl font-bold py-3 rounded-md">Calculate</button>
@@ -136,15 +136,15 @@
 
 
                       <div class="card border-2 py-9 hover:bg-[#FFA384] transition ease-in-out duration-500">
-                        <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                        <figure class="lg:px-0 px-6"><img src="images/ellipse.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class=" text-center text-2xl font-bold">Ellipse</h2>
                           <p class="text-[#686868] text-lg font-normal">Area (A) = π * a * b</p>
                           <div class="flex items-center justify-center mb-10">
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="axis" placeholder="a">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="baxis" placeholder="b">
-                                <span class="text-lg font-normal text-[#848484] p-4">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="axis" placeholder="a">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
+                                <input class="lg:w-24 w-20 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="baxis" placeholder="b">
+                                <span class="text-lg font-normal text-[#848484] lg:p-4 p-2">cm</span>
                           </div>
                           <div class="card-actions justify-end">
                             <button onclick="EllipseCalculate()" class="bg-[#1090d8] text-white w-full text-xl font-bold py-3 rounded-md">Calculate</button>
@@ -154,14 +154,14 @@
 
                 </div>
                 <!-- Area Calculation  -->
-                <div class="w-96 h-[450px] border-2 rounded-xl">
+                <div class=" lg:w-96 lg:h-[450px] border-2 rounded-xl">
                     <h2 class="text-xl font-bold underline p-6 text-center">Area Calculation</h2>
-                    <h4 class="px-10 text-lg font-normal text-[#919191]">1. Triangle <span class="pl-6"><span id="triangleValue"></span>cm <sup>2</sup></span></h4>
-                    <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">2. Rectangle <span class="pl-6"><span id="rectangleValue"></span>cm <sup>2</sup></span></h4>
-                    <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">3. Parallelogram <span class="pl-6"><span id="parallelogramValue"></span>cm <sup>2</sup></span></h4>
-                    <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">4. Rhombus <span class="pl-6"><span id="RhombusValue"></span>cm <sup>2</sup></span></h4>
-                    <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">5. Pentagon <span class="pl-6"><span id="PentagonValue"></span>cm <sup>2</sup></span></h4>
-                    <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">5. Ellipse <span class="pl-6"><span id="EllipseValue"></span>cm <sup>2</sup></span></h4>
+                    <h4 class="px-10 lg:text-lg text-sm font-normal text-[#919191]">1. Triangle <span class="pl-6"><span id="triangleValue"></span>cm <sup>2</sup></span></h4>
+                    <h4 class="px-10 lg:text-lg text-sm mt-5 font-normal text-[#919191]">2. Rectangle <span class="pl-6"><span id="rectangleValue"></span>cm <sup>2</sup></span></h4>
+                    <h4 class="px-10 lg:text-lg text-sm mt-5 font-normal text-[#919191]">3. Parallelogram <span class="pl-6"><span id="parallelogramValue"></span>cm <sup>2</sup></span></h4>
+                    <h4 class="px-10 lg:text-lg text-sm mt-5 font-normal text-[#919191]">4. Rhombus <span class="pl-6"><span id="RhombusValue"></span>cm <sup>2</sup></span></h4>
+                    <h4 class="px-10 lg:text-lg text-sm mt-5 font-normal text-[#919191]">5. Pentagon <span class="pl-6"><span id="PentagonValue"></span>cm <sup>2</sup></span></h4>
+                    <h4 class="px-10 lg:text-lg text-sm mt-5 lg:mb-0 mb-6 font-normal text-[#919191]">6. Ellipse <span class="pl-6"><span id="EllipseValue"></span>cm <sup>2</sup></span></h4>
                 </div>
                 </div>
             </div>

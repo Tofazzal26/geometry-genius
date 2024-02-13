@@ -13,5 +13,6 @@ function parallelogramCaltutale() {
 function commonParallelogram(common) {
     const inputValue = document.getElementById(common);
     const value = inputValue.value;
+    inputValue.value = '';
     return value;
 }

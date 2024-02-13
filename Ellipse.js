@@ -9,6 +9,7 @@ function EllipseCalculate() {
 function commonEllipse(common) {
     const input = document.getElementById(common)
     const value = input.value;
+    input.value = '';
     return value;
 }
 
