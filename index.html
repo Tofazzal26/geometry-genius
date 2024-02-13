@@ -121,13 +121,13 @@
                           <h2 class=" text-center text-2xl font-bold">Pentagon</h2>
                           <p class="text-[#686868] text-lg font-normal">Area (A) = 0.5 X p X b</p>
                           <div class="flex items-center justify-center mb-10">
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="" placeholder="p">
+                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="p" placeholder="p">
                                 <span class="text-lg font-normal text-[#848484] p-4">cm</span>
-                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="" placeholder="b">
+                                <input class="w-24 bg-[#f1f1f1] px-4 py-2 rounded-md outline-none text-lg font-normal" type="text" name="" id="b" placeholder="b">
                                 <span class="text-lg font-normal text-[#848484] p-4">cm</span>
                           </div>
                           <div class="card-actions justify-end">
-                            <button class="bg-[#1090d8] text-white w-full text-xl font-bold py-3 rounded-md">Calculate</button>
+                            <button onclick="pentagonCalculate()" class="bg-[#1090d8] text-white w-full text-xl font-bold py-3 rounded-md">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -159,7 +159,8 @@
                     <h4 class="px-10 text-lg font-normal text-[#919191]">1. Triangle <span class="pl-6"><span id="triangleValue"></span>cm <sup>2</sup></span></h4>
                     <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">2. Rectangle <span class="pl-6"><span id="rectangleValue"></span>cm <sup>2</sup></span></h4>
                     <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">3. Parallelogram <span class="pl-6"><span id="parallelogramValue"></span>cm <sup>2</sup></span></h4>
-                    <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">3. Rhombus <span class="pl-6"><span id="RhombusValue"></span>cm <sup>2</sup></span></h4>
+                    <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">4. Rhombus <span class="pl-6"><span id="RhombusValue"></span>cm <sup>2</sup></span></h4>
+                    <h4 class="px-10 text-lg mt-5 font-normal text-[#919191]">5. Pentagon <span class="pl-6"><span id="PentagonValue"></span>cm <sup>2</sup></span></h4>
                 </div>
                 </div>
             </div>
@@ -170,5 +171,6 @@
 <script src="Rectangle.js"></script>
 <script src="Parallelogram.js"></script>
 <script src="Rhombus.js"></script>
+<script src="Pentagon.js"></script>
 </body>
 </html>
